@@ -3,15 +3,11 @@ module Zipper
 
   class Connection
     def connection
-      @connection ||= Faraday.new(url: BASE_URL) do |faraday|
-        # faraday.request :json
-        faraday.response :json, content_type: /\bjson$/
-        faraday.adapter Faraday.default_adapter
-      end
+      @connection ||= Faraday.new(url: BASE_URL)
     end
 
     def get(path)
-      connection.get(path).body
+      JSON.parse(connection.get(path).body)
     end
   end
 end
