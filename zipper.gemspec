@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{zipper}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
   s.date = %q{2019-11-18}
   s.description = %q{Use this gem in order to fetch population data for a given zipcode}
   s.summary = %q{Client to fetch population data for a given zipcode}
