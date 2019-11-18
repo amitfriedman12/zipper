@@ -3,11 +3,11 @@ module Zipper
     attr_reader :connection
 
     def initialize
-      @connection = ::Zipper::Connection.new
+      @connection = Connection.new
     end
 
     def get_zip_data(zip)
-      ::Zipper::Zip.get(connection, zip)
+      Zip.get(connection, zip)
     end
   end
 end
