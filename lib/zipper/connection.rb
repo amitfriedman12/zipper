@@ -3,7 +3,7 @@ module Zipper
 
   class Connection
     def connection
-      @connection ||= Faraday.new(url: BASE_URL)
+      @connection ||= ::Faraday.new(url: BASE_URL)
     end
 
     def get(path)
