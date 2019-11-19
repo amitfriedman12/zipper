@@ -1,9 +1,18 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'zipper/version'
+
 Gem::Specification.new do |s|
   s.name = 'Zipper'
-  s.version = '0.0.3'
+  s.version = Zipper::VERSION
   s.date = '2019-11-18'
-  s.description = 'Use this gem in order to fetch population data for a given zipcode'
-  s.summary = 'Client to fetch population data for a given zipcode'
+  s.summary = 'Client to fetch population data'
+  s.description = <<-EOF
+    Use this gem in order to fetch population data.
+    Currently the only public method for the client class is #get_zip_data
+    which requires a zipcode argument.
+    Example: Zipper::Client.get_zip_data(9266)
+  EOF
   s.authors = 'Amit Friedman'
   s.email = 'amitfriedman12@gmail.com'
   s.files = [
