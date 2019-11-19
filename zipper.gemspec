@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'faraday', '~> 0.11'
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'pry'
-  s.add_development_dependency 'rubocop', '0.47.1'
+  s.add_development_dependency 'rubocop', '0.76.0'
 end
