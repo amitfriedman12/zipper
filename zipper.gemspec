@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'zipper/version'
 
 Gem::Specification.new do |s|
-  s.name = 'Zipper'
+  s.name = 'zipper'
   s.version = Zipper::VERSION
   s.date = '2019-11-18'
   s.summary = 'Client to fetch population data'
