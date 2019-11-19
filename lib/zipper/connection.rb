@@ -1,6 +1,6 @@
 module Zipper
   class Connection
-    BASE_URL = 'https://pop-data.herokuapp.com/'
+    BASE_URL = 'https://pop-data.herokuapp.com/'.freeze
 
     def connection
       @connection ||= ::Faraday.new(url: BASE_URL)
