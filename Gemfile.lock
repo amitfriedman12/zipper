@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    Zipper (0.0.4)
+    Zipper (0.0.5)
       faraday (~> 0.11)
 
 GEM
